@@ -1,7 +1,7 @@
   //ES5版面向对象
 	function Carousel(width,length) {
-  this.container = document.getElementsByClassName("container")[0];
-  this.carou = document.getElementsByClassName("carousel")[0];
+  this.container = document.getElementsByClassName("my_carousel")[0];
+  this.carou = document.getElementsByClassName("carousel-inner")[0];
   this.left = document.getElementsByClassName("left")[0];
   this.right = document.getElementsByClassName("right")[0];
   this.dots = document.getElementsByClassName("panel")[0].children;
@@ -67,7 +67,7 @@
 		   that._showClass();
 		 }
 		 
-     }, 1000);
+     }, 3000);
   };
   //上一张
   Carousel.prototype.prev = function() {

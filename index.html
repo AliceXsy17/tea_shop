@@ -49,7 +49,18 @@
     </ul>
 </div>
 <div class="my_carousel">
-    <img class="w-100" src="imgs/13039_jauefgtq.jpg" alt=""/>
+    <div class="carousel-inner" style="left: 0;">
+        <div class="c c1" onclick="go1()"></div>
+        <div class="c c2" onclick="go2()"></div>
+        <div class="c c3" onclick="go3()"></div>
+      </div>
+      <div class="left">&lt;</div>
+      <div class="right">&gt;</div>
+      <div class="panel">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 </div>
 <div class="container kinds">
     <div class="d-flex justify-content-between">
@@ -231,5 +242,28 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script>
+    var container= document.getElementsByClassName("my_carousel")[0];
+    var containerWidth = container.offsetWidth;
+      var carousel1 = new Carousel(containerWidth,3);
+      carousel1.init();
+    window.onresize = function () {
+      containerWidth = container.offsetWidth;
+      var carousel2 = new Carousel(containerWidth,3);
+      carousel2.init();
+      location.reload();
+    }
+   function go1() {
+     location.href = "https://www.baidu.com";
+   };
+   function go2() {
+      location.href = "http://www.tmooc.cn/";
+    };
+    function go3() {
+      location.href = "http://www.yangliyang.com/";
+    };
+  
+  </script>
 </body>
 </html>

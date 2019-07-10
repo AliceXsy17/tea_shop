@@ -1,4 +1,4 @@
-/*Ã½Ìå²éÑ¯¿ªÊ¼*/
+/*Ã½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½Ê¼*/
 @media (min-width: 1200px){
     .my_nav>div{
         width: 15%;
@@ -102,7 +102,7 @@
         font-size: 10px;
     }
 }
-/*Ã½Ìå²éÑ¯½áÊø*/
+/*Ã½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½*/
 .header>div{
     height: 21px;
     line-height: 21px;
@@ -131,9 +131,7 @@
 .my_nav ul li a{
     color: #333;
 }
-.my_carousel{
-    height: 530px ;
-}
+
 .kinds_left{
     height: 78px;
 }
@@ -346,7 +344,7 @@
 .down .intro>div:nth-child(2){
     font-size: 12px;
 }
-/*hover¶¯»­¿ªÊ¼*/
+/*hoverï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼*/
 .team .down>div img{
     transition: 1s;
 }
@@ -379,7 +377,7 @@
     display: inline-block;
     border-bottom: 2px solid rgb(148, 207, 67);
     transform-style: preserve-3d;
-    transform:rotateX(105deg);
+    transform:rotateX(101deg);
     transition: 1s;
 }
 .my_nav .about_us a span{
@@ -406,8 +404,8 @@
 .company>div:first-child img:hover{
    transform: translateZ(70px);
 }
-/*hover¶¯»­½áÊø*/
-/*animation¶¯»­*/
+/*hoverï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
+/*animationï¿½ï¿½ï¿½ï¿½*/
 .container.kinds{
     animation: leftIn 1s;
 }
@@ -484,3 +482,90 @@
         transform: translate(0);
     }
 }
+/* è½®æ’­å›¾ç›¸å…³ */
+.my_carousel {
+	position: relative;
+	width: 100%;
+	height: 623px;
+	overflow: hidden;
+}
+
+@media (min-width: 576px) {
+	.panel{
+		left: 260px;
+	}
+}
+
+@media (min-width: 768px) {
+	.panel{
+		left: 350px;
+	}
+}
+
+@media (min-width: 992px) {
+	.panel{
+		left: 450px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.panel{
+		left: 830px;
+	}
+}
+	.carousel-inner{
+	 position: absolute;
+	 width: 300%;
+	}
+	.c {
+	  width: 33.33333333%;
+	  height: 623px;
+	  float: left;
+	}
+	.c1{
+	  background: url(../imgs/13039_jaue4w5v.jpg) no-repeat;
+	  background-size: 100% 100%;
+	}
+	.c2{
+		background: url(../imgs/13039_jauefgtq.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.c3{
+		background: url(../imgs/13039_jauekop3.jpg) no-repeat;
+		background-size: 100% 100%;
+	}
+	.left, .right{
+	 position: absolute;
+	 color: #fff;
+	 font-size: 20px;
+	 cursor: pointer;
+	}
+	.left{
+	top: 260px;
+	left: 10px;
+	z-index: 2
+	}
+	.right{
+	top: 260px;
+	right: 10px;
+	}
+	.panel{
+	  position: absolute;
+	  bottom: 20px;
+	  width: 55px;
+	  height: 10px;
+	}
+	.panel>div{
+	 float: left;
+	 width: 15px;
+	 height: 15px;
+	 margin-right: 5px;
+	 border-radius: 50%;
+	 background: #fff;
+	}
+	.panel>div:last-child{
+	 margin-right: 0;
+	}
+	.panel .active{
+	   background: #ccc;
+	}
